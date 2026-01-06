@@ -3,19 +3,11 @@ variable "ami_id" {
     default = "ami-0b4f379183e5706b9"
 }
 
-variable "instance_type" {
-    type = string
-    default = "t2.nano"
+variable "instance_names" {
+    type = list
+    default = ["mongodb" , "redis" , "rabbitmq", "catalogue" , "user" , "cart" , "shipping" , "payment" , "web" , "mysql", "dispatch"]
 }
 
-variable "tags" {
-    type = map
-    default = {
-        Environment = "Development"
-        Project     = "RoboShop"
-        Name        = "roboshop-instance"
-    }
-}
 
 variable "cidr_block" {
     type = string
