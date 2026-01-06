@@ -28,3 +28,8 @@ variable "to_port" {
     type = number
     default = 0
 }
+
+variable "zone_id" {
+    type = string
+    default = "Z098909866TVAEXAMPLE"
+}
