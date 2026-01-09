@@ -44,7 +44,7 @@ variable "to_port" {
 
 variable "zone_id" {
   type    = string
-  default = "Z00139271KWQWRH571PL5"
+  default = "Z0645412DUI1FI74RJCD"
 }
 
 variable "domain_name" {
