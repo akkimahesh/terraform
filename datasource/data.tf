@@ -19,22 +19,22 @@ data "aws_ami" "centos8" {
 }
 
 
-data "aws_ami" "amazon_linux_2" {
-  most_recent      = true
-  owners           = ["amazon"]
+# data "aws_ami" "amazon_linux_2" {
+#   most_recent      = true
+#   owners           = ["amazon"]
 
-  filter {
-    name   = "name"
-    values = ["al2023-ami-2023.10.*"]
-  }
+#   filter {
+#     name   = "name"
+#     values = ["al2023-ami-2023.10.*"]
+#   }
 
-  filter {
-    name   = "root-device-type"
-    values = ["ebs"]
-  }
+#   filter {
+#     name   = "root-device-type"
+#     values = ["ebs"]
+#   }
 
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-}
+#   filter {
+#     name   = "virtualization-type"
+#     values = ["hvm"]
+#   }
+# }
